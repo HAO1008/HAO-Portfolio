@@ -5,8 +5,347 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+   <!-- fontawsome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+   <!-- css -->
+   <link rel="stylesheet" href="./css/aos.css">
+   <link rel="stylesheet" href="./css/swiper-bundle.css">
+   <link rel="stylesheet" href="./css/style.min.css">
+
+   <!-- js -->
+   <script src="./js/lottie.min.js"></script>
+   <script src="./js/aos.js"></script>
+
+   <!-- JQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+   
 </head>
 <body>
-  <h1>123</h1>
+  <!-- header -->
+  <header class="header" id="header">
+    <section class="dynamic">
+      <img src="./img/dynamic_img/stars.png" id="startss" alt="">
+      <img src="./img/dynamic_img/forest.png" id="forest" alt="">
+      <img src="./img/dynamic_img/cloud.png" id="leftcloud" alt="">
+      <img src="./img/dynamic_img/cloud2.png" id="rightcloud" alt="">
+      <img src="./img/dynamic_img/sun.png" id="sun" alt="">
+      <div id="text">Porfolio</div>
+      <a href="javascript:;" id="dy_btn">Start</a>
+    </section>
+  </header>
+  <!-- fixed nav-bar -->
+  <nav>
+    <!-- 左側 FIXED BAR -->
+    <section class="slidebar">
+      <h1>LOGO</h1>
+      <ul class="RWD_menu">
+        <li><a href="#header"><i class="fas fa-home"></i> <span>HOME</span></a></li>
+        <li><a href="#skill"><i class="fas fa-book"></i> <span>專業技能</span></a></li>             
+        <li><a href="#resume"><i class="fas fa-id-card"></i> <span>履歷</span></a></li>
+        <li><a href="#profolio"><i class="fas fa-palette"></i> <span>作品</span></a></li>
+      </ul>
+      <div class="menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+      </div>
+    </section>
+    <!-- MENU BAR -->
+    <section>
+        <div class="menu_bar">
+            <ul>
+                <li><a href="#header"><i class="fas fa-home"></i> <span>HOME</span></a></li>
+
+                <li><a href="#skill"><i class="fas fa-book"></i> <span>專業技能</span></a></li>
+                
+                <li><a href="#resume"><i class="fas fa-id-card"></i> <span>履歷</span></a></li>
+                
+                <li><a href="#profolio"><i class="fas fa-palette"></i> <span>作品</span></a></li>
+            </ul>
+        </div>
+    </section>   
+  </nav>
+
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx分割 -->
+  <section class="interval" id="skill">
+    <h2>Skill is power.</h2>
+    <h1>專業技能</h1>
+  </section>
+  <!-- 技能 -->
+  <main class="skill">
+    <div class="skill_area">
+      <!-- skill01 -->
+      <div class="skill_content">
+          <div class="skill_text">
+              <h2>01.</h2>
+              <h1>HTML/CSS</h1>
+              <ul>
+                <li>利用HTML/CSS架構響應式網站</li>
+                <li>運用css預處理器簡化代碼，方便後續維護</li>
+                <li>利用Boostrap快速搭建形象網站</li>
+              </ul>
+          </div>
+          <div data-aos="flip-left" class="test" id="animation"></div>
+      </div>
+      <!-- skill02 -->
+      <div class="skill_content">
+          <div class="test" data-aos="flip-right" id="animationn"></div>
+          <div class="skill_text">
+              <h2>02.</h2>
+              <h1>Javascript</h1>
+              <ul>
+                <li>熟悉Javascript語法，建構動態網頁</li>
+                <li>利用Jquery整合第三方插件</li>
+                <li>具有串接Google Service 及其他API等經驗</li>
+                <li>運用Vue建構SPA頁面</li>
+              </ul>
+          </div>
+      </div>
+      <!-- skill03 -->
+      <div class="skill_content">
+          <div class="skill_text">
+              <h2>03.</h2>
+              <h1>Other</h1>
+              <ul>
+                <li>擁有Git、Github等工具進行多人協作開發經驗</li>
+                <li>運用Adobe XD、PS、AI等工具進行UI/UX設計</li>
+              </ul>
+          </div>
+          <div class="test" data-aos="flip-left" id="animationnn"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx分割 -->
+  <section class="interval interval2" id="resume">
+    <h2>For man is man and master of his fate.</h2>
+    <h1>履歷</h1>
+  </section>
+  <!-- 履歷 -->
+  <main class="resume">
+    <div class="abgne_tab">
+      <!-- 頁籤 -->
+      <ul class="tabs">
+          <li>
+              <a class="resume_page1 resume_active" href="#tab1">
+              <h1>個人資料</h1>
+              <p>Try not to become a man of success but rather try to become a man of value.</p>
+              </a>
+          </li>
+          <li>
+              <a class="resume_page2" href="#tab2">
+              <h1>經歷</h1>
+              <p>All is but lip-wisdom that wants experience.</p>
+              </a>
+          </li>
+          <li>
+              <a class="resume_page3" href="#tab3">
+              <h1>自傳</h1>
+              <p>Always remember that you are absolutely unique.</p>
+              </a>
+          </li>
+      </ul>
+
+      <div class="tab_container">
+          <!-- 個人資料 -->
+          <div id="tab1" class="tab_content">
+              <img src="./img/icon/pic_test.png" alt="">
+              <div class="dialogbox">
+                  <div class="speech-bubble" >
+                      <h1>姓名: <span>廖士豪</span></h1>
+                      <h1>英文名: <span>Jordan</span></h1>
+                      <h1>年齡: <span>23</span></h1>
+                  </div>
+                  <div class="speech-bubble2">
+                      <h1>Email: <span><a href="mailto:euwnjfk@gmail.com">euwnjfk@gmail.com</a></span></h1>
+                      <h1>手機: <span><a href="tel:0976656913">0976656913</a></span></h1>
+                      <h1>通訊地: <span>台中市</span></h1>
+                  </div>
+                  <div class="speech-bubble2">
+                      <h1>學歷: <span>國立台中科技大學</span></h1>
+                  </div>
+              </div>
+          </div>
+
+          <!-- 經歷 -->
+          <div id="tab2">
+              <div class="tab_experience">
+                  <button class="experience_work">
+                      <i class="fas fa-briefcase">工作經驗</i>
+                  </button>
+                  <button class="experience_web">
+                      <i class="fas fa-laptop-code">前端開發經驗</i>
+                  </button>
+              </div>
+          </div>
+
+          <!-- 自傳 -->
+          <div id="tab3">
+              <div class="tab3-box">
+                <div class="bio">
+                    <h1>座右銘:</h1>
+                    <p>找不到的BUG就不算BUG</p>
+                    <h1>希望職位:</h1>
+                    <p>Front-End 前端工程師</p>
+                    <h1>自傳:</h1>
+                    <p>目前就讀台中科技大學，先前工作多以金融業為主，因此具備良好溝通與協調能力。
+                    <br>
+                  因協助友人的畢業製作而接觸前端領域，至此產生濃厚興趣。在一年的自學以及職業培訓下，製作出多項作品並擁有串接API、多人協作開發等經驗。</p>
+                </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </main>
+  <!-- 經歷內容 -->
+  <dialog id="workbox" >
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="work_box_img">
+                    <img src="./img/work/work02.jpg" alt="">
+                </div>
+                <div class="work_box_content">
+                    <h3>First Commercial Bank</h3>
+                    <h1>第一銀行</h1>
+                    <ul>
+                        <li>工作年資: <span>4個月</span></li>
+                        <li>工作職位: <span>學校實習</span></li>
+                        <li>負責事項: <span>文書處理、客戶服務</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="work_box_img">
+                    <img src="./img/work/work01.jpg" alt="">
+                </div>
+                <div class="work_box_content">
+                    <h3>Allianz</h3>
+                    <h1>安聯人壽</h1>
+                    <ul>
+                        <li>工作年資: <span>2年5個月</span></li>
+                        <li>工作職位: <span>業務主任</span></li>
+                        <li>負責事項: <span>業務拓展、新人訓練</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </dialog>
+  <dialog id="webbox" >
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="work_box_img">
+                    <img src="./img/work/web01.png" alt="">
+                </div>
+                <div class="work_box_content">
+                    <h3>Set Off</h3>
+                    <h1>Wordpress接案</h1>
+                    <ul>
+                        <li>使用時間: <span>3個月</span></li>
+                        <li>使用工具: <span>Wordpress</span></li>
+                        <li>使用經歷: <span>排版，客戶接洽、開發</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="work_box_img">
+                    <img src="./img/work/web02.png" alt="">
+                </div>
+                <div class="work_box_content">
+                    <h3>Continued</h3>
+                    <h1>校園創業競賽</h1>
+                    <ul>
+                        <li>使用時間: <span>1年3個月</span></li>
+                        <li>使用工具: <span>VS Code</span></li>
+                        <li>使用經歷: <span>響應式版面設計、動態網頁開發、API串接</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="work_box_img">
+                    <img src="./img/work/web03.png" alt="">
+                </div>
+                <div class="work_box_content">
+                    <h3>Newest</h3>
+                    <h1>職業訓練</h1>
+                    <ul>
+                        <li>使用時間: <span>6個月</span></li>
+                        <li>使用工具: <span>VS Code、Bootstrap、VUE.js</span></li>
+                        <li>使用經歷: <span>電子商務網站建構，購物車串接，前端框架實作，UI/UX設計</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </dialog>
+
+
+   <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx分割 -->
+   <section class="interval" id="profolio">
+    <h2>Talk is cheap. Show me the code.</h2>
+    <h1>作品集</h1>
+  </section>
+  <!-- 作品集 -->
+  <main class="profolio">
+      <div class="profolio-cards">
+          <div class="profolio-cards-img">
+            <img src="./img/profolio/01-covid19.jpg" alt="">
+            <img src="./img/profolio/02-OnoSteak.jpg" alt="">
+            <img src="./img/profolio/btc.jfif" alt="">
+          </div>
+          <div class="profolio-card-tro">
+            <a class="profolio-href" href="https://www.google.com/" target="_blank">
+                <h1>API串接 - Covid19</h1>
+                <p>利用全球及時疫情報告提供的開放式API，將複雜的資訊串接，並透過網頁美化呈現出最新的資料內容。</p>
+            </a>
+            <div class="profolio-card-tro-icon">
+                <div class="tro-icon icon-tools">
+                    <i class="fas fa-tools"></i>
+                    <ul>
+                        <li>Fontawasome</li>
+                        <li>Lottie</li>
+                        <li>chart.js</li>
+                    </ul>
+                </div>
+                <div class="tro-icon icon-skills">
+                    <i class="fas fa-book-reader"></i>
+                    <ul>
+                        <li>API串接</li>
+                        <li>壓縮檔案</li>
+                        <li>RWD</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="profolio-option">
+            </ul>
+          </div>
+      </div>
+  </main>
+
+
+  
+
+
+  
+  <!-- =======================================animation -->
+  <script src="./js/anime.min.js"></script>
+  <!-- =======================================輪播 -->
+  <script src="./js/swiper-bundle.js"></script>
+  <!-- =======================================主要 -->
+  <script src="./js/index.js"></script>
+
+
 </body>
 </html>
