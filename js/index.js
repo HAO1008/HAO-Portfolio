@@ -92,12 +92,12 @@ animated
     duration:800,
     easing:'easeInOutBack'
 })
-.add({
-    targets:'#dy_btn',
-    top:'-50%',
-    duration:1000,
-    easing:'easeInOutBack'
-})
+// .add({
+//     targets:'#dy_btn',
+//     top:'50%',
+//     duration:1000,
+//     easing:'easeInOutBack'
+// })
 
 
 document.querySelector('#dy_btn').onclick = animated.play;
