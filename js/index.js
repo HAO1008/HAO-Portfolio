@@ -94,7 +94,7 @@ animated
 })
 .add({
     targets:'#dy_btn',
-    top:'50%',
+    top:'-50%',
     duration:1000,
     easing:'easeInOutBack'
 })
