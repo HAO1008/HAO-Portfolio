@@ -70,7 +70,7 @@ animated
 })
 .add({
     targets:'#sun',
-    bottom:'8%',
+    bottom:'7.5%',
     duration:800,
     easing:'easeInOutBack'
 })
