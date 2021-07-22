@@ -198,22 +198,22 @@ const swiper = new Swiper('.swiper-container', {
         h1:'API串接 - Covid19',
         p:'利用全球及時疫情報告提供的開放式API，將複雜的資訊串接，並透過網頁美化呈現出最新的資料內容。',
         tools:['Fontawasome','Lottie','chart.js'],
-        skills:['API串接','壓縮檔案','RWD'],
-        href:'https://www.google.com/'
+        skills:['API串接','資料視覺化','動態變更數據'],
+        href:'https://hao1008.github.io/COVID-19/'
         },
         {
         h1:'Bootstrap切板 - 牛排廚房',
         p:'運用css框架 - Bootstrap，架構出動態以及響應式網站',
         tools:['Boostrap','Google Map API','Jquery'],
-        skills:['MVC','RWD','UI/UX'],
-        href:'https://cn.pornhub.com/'
+        skills:['API串接','RWD','UI/UX'],
+        href:'https://hao1008.github.io/OnoSteak/'
         },
         {
-        h1:'Vue.js - 虛擬貨幣',
-        p:'以JS框架Vue.js，透過Rapid API提供的開源API，以axios方式將數據呈現，並透過各種方式排序，搜尋關鍵字',
-        tools:['Vue.js','Fontawasome','Rapid API'],
-        skills:['Vue3'],
-        href:'https://www.youtube.com/'
+        h1:'Vue.js - TodoList',
+        p:'以JS框架Vue.js，透過Vue-cli開發一套選項式組件應用',
+        tools:['Vue-cli','vite','npm'],
+        skills:['Vue3','Vue-cli','npm'],
+        href:'https://github.com/HAO1008/todolist'
         }
     ]
     const coursel = document.querySelector('.profolio-cards-img')
