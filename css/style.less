@@ -10,7 +10,6 @@
   justify-content: @jus;
 }
 
-
 // =============================main
 *{
   margin: 0;
@@ -255,12 +254,38 @@ a{
 .menubar_active{
   left: 0;
 }
-// RWDmenu
-.RWD_menu{
-  height: 80%;
-  .display(column,space-around);
-  opacity: 0;
+
+// =============================RWD_icon
+.RWD_icon{
+  visibility: hidden;
+  opacity: .85;
+  .display(column, space-between);
+  z-index: 9999999;
+  position: fixed;
+  top: 5%;
+  left: 3%;
+    li{
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-content: center;
+      margin-bottom: 20px;
+      // border: @color solid 1px;
+      background-color: @darkcolor;
+      border-radius: 50%;
+      padding: 5px;
+      transition: .5s;
+        a{
+          color: @color;
+          font-size: 1.2rem;
+        }
+        &:hover{
+          border-radius: 5px;
+        }
+
+    }
 }
+
 //  =============================skills
 .skill{
   width: 100%;
@@ -911,6 +936,10 @@ a{
         font-size: 1rem;
       }
   }
+  //RWD_icon{
+    .RWD_icon{
+      visibility: visible;
+    }
   // menubar
   .menu_bar{
     display: none;
@@ -1222,6 +1251,9 @@ a{
           height:50%;
             .profolio-option{
               align-self: center;
+                li{
+                  margin-right: 5px;
+                }
             }
         }
     }
