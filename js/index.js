@@ -100,7 +100,8 @@ animated
 // })
 
 
-document.querySelector('#dy_btn').onclick = animated.play;
+// document.querySelector('#dy_btn').onclick = animated.play;
+window.onload = animated.play
 
 
 // =================================== lottie
